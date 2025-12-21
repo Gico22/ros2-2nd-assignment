@@ -14,8 +14,8 @@ find_package(rosidl_default_runtime REQUIRED)
 # Interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ObstacleInfo.msg"
-  # "srv/SetThreshold.srv"
-  # "srv/GetAverages.srv"
+  "srv/SetThreshold.srv"
+  "srv/GetAverages.srv"
 )
 
 # Make interfaces usable from other packages
