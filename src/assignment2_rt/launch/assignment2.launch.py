@@ -14,13 +14,6 @@ def generate_launch_description():
         ),
     )
 
-    ui = Node(
-        package='assignment2_rt',
-        executable='ui',
-        name='UI_node',
-        output='screen'
-    )
-
     safety = Node(
         package='assignment2_rt',
         executable='safety',
@@ -31,5 +24,4 @@ def generate_launch_description():
     return LaunchDescription([
         sim_launch,
         safety,
-        ui,
     ])
